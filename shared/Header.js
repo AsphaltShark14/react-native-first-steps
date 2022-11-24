@@ -1,20 +1,17 @@
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, Image, ImageBackground } from "react-native";
 
 export const Header = ({ title }) => {
     
     return (
-        <View styles={styles.header}>
-            <View>
-                <Text styles={styles.headerText}>{title}</Text>
-            </View>
-
+        <View style={styles.header}>
+                <Image source={require("../assets/pad-logo.png")} style={styles.logo} />
+                <Text style={styles.headerText}>{title}</Text>
         </View>
     )
 }
 
 const styles = StyleSheet.create({
     header: {
-        width: "100%",
         height: "100%",
         flexDirection: "row",
         alignItems: "center",
@@ -26,4 +23,9 @@ const styles = StyleSheet.create({
         color: "#333",
         letterSpacing: 1,
     },
+    logo: {
+        width: 25,
+        height: 15,
+        marginRight: 10
+    }
   })

@@ -11,7 +11,6 @@ export const homeStyles = StyleSheet.create({
         color: "#4A4F67",
         fontSize: 12,
         fontWeight: "bold",
-        marginTop: 10,
         textAlign: "center"
     },
     paragraph: {

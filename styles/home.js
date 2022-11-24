@@ -1,15 +1,18 @@
 import { StyleSheet } from "react-native-web";
 
-export const globalStyles = StyleSheet.create({
-    container: {
+export const homeStyles = StyleSheet.create({
+    listContainer: {
         flex: 1,
         flexDirection: "column",
         alignItems: "center",
-        marginTop: 20
+        marginTop: 20,
     },
     titleText: {
-        color: "#5B627E",
-        fontSize: 16
+        color: "#4A4F67",
+        fontSize: 12,
+        fontWeight: "bold",
+        marginTop: 10,
+        textAlign: "center"
     },
     paragraph: {
         marginVertical: 8,

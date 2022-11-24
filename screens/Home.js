@@ -42,16 +42,16 @@ export const Home = ({ navigation }) => {
             <Text style={homeStyles.buttonText}>Add a review!</Text>
             </TouchableOpacity>
 
-            <Text style={globalStyles.titleText}>Game reviews</Text>
+            <Text style={{...globalStyles.titleText, marginBottom: 10}}>Game reviews</Text>
             <View style={homeStyles.listContainer}>
                 <FlatList
                     data={reviews}
                     renderItem={({item}) => (
-                        <TouchableOpacity onPress={() => navigation.navigate("ReviewDetails", { item })}>
+                        <Pressable onPress={() => navigation.navigate("ReviewDetails", { item })}>
                             <Card>
                              <Text style={homeStyles.titleText}>{item.title}</Text>
                             </Card>
-                        </TouchableOpacity>
+                        </Pressable>
                     )}
                 />
             </View>

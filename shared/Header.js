@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, Image, ImageBackground } from "react-native";
+import { View, Text, StyleSheet, Image } from "react-native";
 
 export const Header = ({ title }) => {
     
